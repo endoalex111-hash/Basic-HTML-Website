@@ -4,72 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a Basic HTML Website.">
-    <title>Basic HTML Website</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Handwritten style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
 
+        <!-- HEADER -->
         <header>
-
-            <h1>Endo Alex</h1>
+            <div class="logo">
+                <div class="square"></div>
+                <h2>Endo Alex</h2>
+            </div>
 
             <nav>
-
                 <ul>
-
                     <li><a href="#home">Home</a></li>
+                    <li>/</li>
                     <li><a href="#projects">Projects</a></li>
+                    <li>/</li>
                     <li><a href="#articles">Articles</a></li>
+                    <li>/</li>
                     <li><a href="#contact">Contact</a></li>
-
                 </ul>
-
             </nav>
-
         </header>
 
-        <main>
-
+        <!-- HERO -->
+        <section class="hero">
             <h1>Frontend Developer</h1>
             <p>html only with proper layout, no styling</p>
+        </section>
 
-            <div class="projects">
+        <!-- MAIN GRID -->
+        <section class="grid">
 
+            <!-- PROJECTS -->
+            <div class="box projects">
                 <h3>Projects</h3>
-                <a href="#portfolio">HTML Only Portfolio</a>
-                <a href="#calculator">Calculator</a>
-                <a href="#quiz-app">Quiz App</a>
-                <a href="#count-down-timer">Countdown Timer</a>
-                <a href="#product-upcoming-page">Product Upcoming Page</a>
-                
+                <p>HTML Only Portfolio</p>
+                <p>Calculator</p>
+                <p>Quiz App</p>
+                <p>Countdown Timer</p>
+                <p>Product Upcoming Page</p>
             </div>
-            
-            <div class="work-experience">
-                
+
+            <!-- WORK -->
+            <div class="box work">
                 <h3>Work Experience</h3>
-                <h4>roadmap.sh</h4>
+                <p><strong>roadmap.sh</strong></p>
                 <p>Solved all the frontend projects</p>
-                <a href="#my-profile">Visit my Profile</a>
+                <a href="#">Visit my Profile</a>
 
-            </div>
-
-            <div class="open-source-work">
+                <hr>
 
                 <h3>OpenSource Work</h3>
                 <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-                <a href="#my-github-profile">Visit my GitHub Profile</a>
-                
+                <a href="#">Visit my GitHub Profile</a>
             </div>
-            
-            <div class="education">
 
+            <!-- EDUCATION -->
+            <div class="box education">
                 <h3>Education</h3>
-                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-                <p>Courses I took:</p>
-                <ul>
+                <p>
+                    Graduated with 3.76 out of 4 CGPA.
+                    Won Acme Hackathon.
+                    Organized 30 sessions.
+                </p>
 
+                <p><strong>Courses I took:</strong></p>
+                <ul>
                     <li>Object Oriented Programming</li>
                     <li>Data Structures and Algorithms</li>
                     <li>Web Engineering</li>
@@ -78,45 +86,37 @@
                     <li>Computer Graphics</li>
                     <li>Database Management Systems</li>
                     <li>Distributed Database Systems</li>
-                    <li>Discreet Mathematics</li>
-
+                    <li>Discrete Mathematics</li>
                 </ul>
-
             </div>
+
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="reviews-section">
+            <h3>Reviews from my Teachers</h3>
 
             <div class="reviews">
-
-                <h3>Reviews from my Teachers</h3>
-
-                <div class="review-1">
-
+                <div class="card">
                     <p>John doe was a brilliant student; always stood out with his assignments.</p>
-                    <p>Jane Doe Assistant Professor</p>
-
+                    <span>Jane Doe<br>Assistant Professor</span>
                 </div>
 
-                <div class="review-2">
-
+                <div class="card">
                     <p>John doe was a brilliant student; always stood out with his assignments.</p>
-                    <p>Jane Doe Assistant Professor</p>
-
+                    <span>Jane Doe<br>Assistant Professor</span>
                 </div>
 
-                <div class="review-3">
-
+                <div class="card">
                     <p>John doe was a brilliant student; always stood out with his assignments.</p>
-                    <p>Jane Doe Assistant Professor</p>
-
+                    <span>Jane Doe<br>Assistant Professor</span>
                 </div>
-
             </div>
+        </section>
 
-        </main>
-
+        <!-- FOOTER -->
         <footer>
-
-            <h4>&copy; all rights reserved 2025</h4>
-
+            <p>&copy; all rights reserved 2025</p>
         </footer>
 
     </div>
